@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Project Setup from Scratch Using `venv` and `pip` in PyCharm"
 date:   2023-12-10 21:46:26 -0500
-categories: jekyll update
+categories: [Python, Beginner Guide]
 ---
 ### Step 1: Install Python
 
@@ -39,7 +39,9 @@ categories: jekyll update
 ### Step 3: Work with Virtual Environment (venv)
 
 1. **Activate venv**:
-   - PyCharm automatically activates the virtual environment for your project.
+   - PyCharm actually will automatically activates the virtual environment for your project. A more commonly used approach is through a terminal. First open an a bash terminal and cd to the root directory of your project. Then run following command:
+
+   ``source ./venv/Scripts/activate``
 
 2. **Install Packages with pip**:
    - To install a package, go to the terminal within PyCharm (usually at the bottom).
