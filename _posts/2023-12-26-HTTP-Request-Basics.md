@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Beginners' guide of HTTP Request"
-date:   2023-12-26 21:46:26 -0500
+title:  "Beginners' Guide of HTTP Request"
+date:   2023-12-26 3:26:26 -0500
 categories: "Web Development"
 tags: "Web Development"
 ---
