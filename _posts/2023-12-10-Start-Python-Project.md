@@ -30,9 +30,23 @@ tags: Python
    - Select this folder as the project location.
 
 4. **Configure Interpreter**:
-   - In the "New Project" window, select the option to create a new virtual environment.
-   - Choose the base Python interpreter you installed earlier.
-   - Specify the location for the virtual environment, typically within your project folder.
+
+   As mentioned we will create a virtual environment for each project, instead of sharing a global environment. To to that the first step is to create a folder serving as the virtual environment and create a Python interpreter mirror file within it for delegated useage of the project. For this step, there are two alternative approaches:
+
+   1. Use the built-in functionality of Pycharm.
+      - In the "New Project" window, select the option to create a new virtual environment.
+      - Choose the base Python interpreter you installed earlier.
+      - Specify the location for the virtual environment, typically within your project folder.
+   2. Manually create the virtual environment folder through terminal.
+      - Open a bash terminal and cd to root dirctory of the project.
+      - Run following command:
+         >python -m venv [venv_folder_name]
+      
+      After that some contents should have been created within this originally empty folder, specifically there should be a "Python interperter". Note that this Python.exe file isn't a full, standalone interpreter installation. Instead, it's a copy of (or a symbolic link to) the Python interpreter binary that you used to create the virtual environment. The virtual environment relies on this binary to execute Python code.
+      - Go to Pycharm setting of the project. Find the Python Interpreter page and setup the Python file within the [venv_folder_name] as interpeter. 
+
+      Here I personally perfer the second approach because if I ask Pycharm to create the environment, the venv folder will be called ".venv" instead of just "venv". The latter of which is more commonly used. 
+   
 
 5. **Create Project**:
    - Click "Create" to create your new project.
