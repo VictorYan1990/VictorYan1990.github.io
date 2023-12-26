@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python Project Setup from Scratch Using `venv` and `pip` in PyCharm"
+title:  "Python Project Setup from Scratch Using venv and pip in PyCharm"
 date:   2023-12-10 21:46:26 -0500
 categories: Python
 tags: Python
